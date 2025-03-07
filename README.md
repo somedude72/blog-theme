@@ -1,3 +1,13 @@
+This is a slightly modified version of the hugo blog awesome theme suited to fit my personal blog website.
+
+ + The original repository can be [found here](https://github.com/hugo-sid/hugo-blog-awesome)
+ + The repository containing my blogs can be [found here](https://github.com/SomedudeX/blog-site).
+ + **Note: This repository will not be regularly updated**.
+
+The following is the README from the original repository
+
+--
+
 <div align=center>
  <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hugo-sid/hugo-blog-awesome/main/assets/icons/book-icon-dark.svg">
