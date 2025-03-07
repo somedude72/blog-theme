@@ -1,6 +1,6 @@
 <div class="navbar" role="navigation">
     <nav class="menu" aria-label="Main Navigation">
-        <a href="{{ .Site.Home.Permalink }}" class="logo">
+        <a href="/" alt="Zichen Qin" class="logo">
             {{ partial "svgs/home.svg" (dict "height" 25 "width" 25) . }}
         </a>
         <input type="checkbox" id="menu-trigger" class="menu-trigger" />
@@ -56,17 +56,13 @@
                                     {{ end }}
                                 {{ end }}
                             {{ end }}
-                        </select>                
+                        </select>
                     </li>
                     <li class="menu-separator">
                         <span>|</span>
                     </li>
                 {{ end }}
             </ul>
-            <a id="mode" href="#">
-                {{ partial "svgs/sun.svg" (dict "height" 21 "width" 21 "class" "mode-sunny" "title" "LIGHT") . }}
-                {{ partial "svgs/sun.svg" (dict "height" 21 "width" 21 "class" "mode-moon" "title" "DARK") . }}
-            </a>
         </div>
     </nav>
 </div>

@@ -1,5 +1,74 @@
-{{ define "title"}}
-    404 |  NOT FOUND
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.min.css">
+    <title>Page Not Found | Zichen Qin</title>
+    <style>
+        /* General Reset */
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #121212; /* Dark background */
+            color: #ffffff; /* White text */
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+        }
+
+        html, body {margin: 0; height: 100%; overflow: hidden}
+
+        .container {
+            padding: 20px 40px;
+            border-radius: 8px; /* Rounded corners */
+            max-width: min(60%, 25rem);
+        }
+
+        h1 {
+            font-size: 23pt;
+            font-weight: bold;
+            margin: 0 0 15px;
+        }
+
+        p {
+            font-size: 13pt;
+            margin: 0 0 20px;
+            font-weight: 500;
+            line-height: 180%;
+        }
+
+        a {
+            color: #4aa1ff; /* Light blue link */
+            text-decoration: underline;
+            font-weight: 500;
+            font-size: 13pt;
+        }
+
+        a:hover a:focus a:active {
+            color: #5ab1ff;
+            transition: 0.3s ease;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>404 | Page Not Found</h1>
+        <p>You just hit a route that doesn't exist</p>
+        <a href="/">Return to homepage</a>
+    </div>
+</body>
+</html>
+
+
+<!-- {{ define "title"}}
+    404 | Not Found
 {{ end }}
 
 {{ define "main"}}
@@ -9,4 +78,4 @@
         <p>{{ T "errors.404_description" }}</p>
     </main>
 </div>
-{{ end }}
+{{ end }} -->

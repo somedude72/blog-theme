@@ -4,11 +4,13 @@
         <article>
             <header class="header">
                 <h1 class="header-title">{{ .Title }}</h1>
+                <p class="post-meta"> {{ .Params.description | replaceRE "\n" "<br>" | replaceRE "  " "&#x2001;&#x2001;" | safeHTML }} </p>
                 {{ $configDateFormat := .Site.Params.dateFormat | default ":date_medium" }}
+                {{ $minread := .Params.minread }}
                 {{ with .Date }}
                 {{ $ISO_time := dateFormat "2006-01-02T15:04:05-07:00" . }}
                 <div class="post-meta">
-                    <time datetime="{{ $ISO_time }}" itemprop="datePublished"> {{ . | time.Format $configDateFormat }} </time>
+                    <time datetime="{{ $ISO_time }}" itemprop="datePublished"> {{ . | time.Format $configDateFormat }} | {{ $minread }} min read </time>
                 </div>
                 {{ end }}
             </header>
@@ -17,7 +19,11 @@
                 {{ .Content }}
             </div>
         </article>
+        {{ if .Params.comments }}
+        <hr style="width: 100%; background: #353535; border: 0; height: 1px" />
+        <br>
         {{- partial "comments.html" . -}}
+        {{ end }}
     </main>
 </div>
 {{ end }}

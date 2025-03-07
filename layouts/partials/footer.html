@@ -1,13 +1,13 @@
 <footer class="footer">
     <span class="footer_item"> </span>
-    &nbsp;
+    <!-- &nbsp; -->
 
     <div class="footer_social-icons">
         {{- partial "socialIcons.html" site.Params.socialIcons -}}
     </div>
     <small class="footer_copyright">
-        © {{ now.Format "2006" }} {{ .Site.Params.author.name }}.
-        {{ T "footer.disclaimer" | safeHTML }}
+        © {{ now.Format "2006" }} {{ .Site.Params.author.name }}. All rights reserved. <br>
+        Shoutout to folks over at <a href="https://gohugo.io/" target="_blank" rel="noreferrer noopener">hugo</a> and the <a href="https://github.com/hugo-sid/hugo-blog-awesome" target="_blank" rel="noreferrer noopener">hugo blog awesome</a> theme for making this website possible!<br>
     </small>
 </footer>
 
