@@ -27,8 +27,9 @@
 
 <meta property="og:locale" content="{{ .Site.LanguageCode }}" />
 <meta name="language" content="{{ .Site.LanguageCode }}" />
-{{ range .AllTranslations }}
-  <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" title="{{ .Language.LanguageName }}" />
+<link rel="alternate" hreflang="{{ .Lang }}" href="{{ .RelPermalink }}">
+{{ range .Translations }}
+	<link rel="alternate" hreflang="{{ .Lang }}" href="{{ .RelPermalink }}">
 {{ end }}
 
 {{/*  Define empty variable image  */}}

@@ -1,5 +1,4 @@
 {{ $avatar_img := .Site.Params.author.avatar }}
-{{ $avatar_img_alt := .Site.Params.author.name }}
 {{ $image := resources.Get $avatar_img }}
 <div class="author">
     {{ with $image }}
@@ -8,8 +7,8 @@
         <image width="25em" height="25em" href="{{ $image.RelPermalink }}" />
     </svg>
     {{ else }}
-    {{ $image := $image.Fill "100x100 webp" }}
-    <img class="author-avatar" src="{{ $image.RelPermalink }}" alt="{{ $avatar_img_alt }}" width="{{ .Width }}"
+    {{ $image := $image.Fill "200x200 webp" }}
+    <img class="author-avatar" src="{{ $image.RelPermalink }}" alt="{{ $avatar_img }}" width="{{ .Width }}"
         height="{{ .Height }}" />
     {{ end }}
     {{ end }}
