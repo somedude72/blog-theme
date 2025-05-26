@@ -100,7 +100,7 @@
     <div class="wrapper">
         {{ partial "bio" . }}
         <main aria-label="Content">
-            <h3 class="posts-item-note section-header" aria-label="Recent Posts"><b>{{ T "home.recent_posts" }}</b><span style="color:#afafaf;font-weight:normal;font-size:12pt;"> — regularly updated</span></h3>
+            <h3 class="posts-item-note section-header" aria-label="Recent Posts"><b>{{ T "home.recent_posts" }}</b><span style="color:#afafaf;font-weight:normal;font-size:12pt;"></span></h3>
 
             {{/* Show last 5 posts in reverse date order */}}
             {{ $pagesToShow := where .Site.RegularPages "Type" "in" site.Params.mainSections }}
