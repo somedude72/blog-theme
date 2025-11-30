@@ -80,11 +80,11 @@ pre code::-webkit-scrollbar {
 /* Operator */ .chroma .o { font-size: 0.9rem;color: #99d1db ; font-style: normal }
 /* OperatorWord */ .chroma .ow { font-size: 0.9rem;color: #99d1db ; font-style: normal }
 /* Punctuation */ .chroma .p { font-size: 0.9rem;color: #c6d0f5 ; font-style: normal }
-/* Comment */ .chroma .c { font-size: 0.9rem;color: #626880 ; font-style: normal }
-/* CommentHashbang */ .chroma .ch { font-size: 0.9rem;color: #626880 ; font-style: normal }
-/* CommentMultiline */ .chroma .cm { font-size: 0.9rem;color: #626880 ; font-style: normal }
-/* CommentSingle */ .chroma .c1 { font-size: 0.9rem;color: #626880 ; font-style: normal }
-/* CommentSpecial */ .chroma .cs { font-size: 0.9rem;color: #626880 ; font-style: normal }
+/* Comment */ .chroma .c { font-size: 0.9rem;color: #c4d0ff91 ; font-style: normal }
+/* CommentHashbang */ .chroma .ch { font-size: 0.9rem;color: #c4d0ff91 ; font-style: normal }
+/* CommentMultiline */ .chroma .cm { font-size: 0.9rem;color: #c4d0ff91 ; font-style: normal }
+/* CommentSingle */ .chroma .c1 { font-size: 0.9rem;color: #c4d0ff91 ; font-style: normal }
+/* CommentSpecial */ .chroma .cs { font-size: 0.9rem;color: #c4d0ff91 ; font-style: normal }
 /* CommentPreproc */ .chroma .cp { font-size: 0.9rem;color: #8caaee ; font-style: normal }
 /* CommentPreprocFile */ .chroma .cpf { font-size: 0.9rem;color: #8caaee ; font-style: normal }
 /* Generic */ .chroma .g { font-size: 0.9rem; ; font-style: normal }
